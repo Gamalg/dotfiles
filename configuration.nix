@@ -43,6 +43,7 @@
       "swiftlint"
       "xcodegen"
       "zsh"
+      "herdr"
     ];
 
     casks = [
