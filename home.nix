@@ -16,12 +16,14 @@ in
     lazygit
     neovim
     nerd-fonts.hack
+    rustup # manages rustc, cargo, clippy, rustfmt, rust-analyzer
   ];
   fonts.fontconfig.enable = true;
   home.sessionVariables.EDITOR = "nvim";
   home.sessionPath = [
     "$HOME/.local/bin"
     "$HOME/bin"
+    "$HOME/.cargo/bin" # binaries from `cargo install`
   ];
 
   programs.zsh = {
